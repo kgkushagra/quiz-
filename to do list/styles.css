@@ -2,7 +2,7 @@ body{
   background: #352f5b;
 }
 .container{
-  max-width: 400px;
+  /* max-width: 400px; */
 }
 input[type=text],
 input[type=text]:focus{
@@ -11,6 +11,12 @@ input[type=text]:focus{
   background: rgba(0,0,0,0.2);
   max-width: 400px;
 }
+.whflx{
+    display: grid;
+    grid-template-rows: repeat(auto-fill, minmax(100px, auto));  
+    align-content: minmax(400px,auto) !important;
+    }
+
 .todos li{
   background: #423a6f;
 }
@@ -19,4 +25,5 @@ input[type=text]:focus{
 }
 .filtered{
     display: none !important;
+    max-width:auto;
 }
